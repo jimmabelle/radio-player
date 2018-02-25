@@ -21,7 +21,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         {this.state.channels.map(item => (
           <Station
             key={item.id}

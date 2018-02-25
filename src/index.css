@@ -46,17 +46,11 @@ border-radius:7px 7px 7px 7px ;
 }
 
 @media (max-width: 360px) {
-  #main {
-    width: 100%;
-  }
-  .wrapper { width: 360px; height: 300px;}
+  #main { width: 100%; }
+  .wrapper { width: 360px; height: 300px; }
   .container-left { width: 100%; }
-  img {width: 150px;}
+  img {width: 150px; }
   .container-right { width: 100%; }
-  h1 { font-size: 2em; margin-left: 20px;}
+  h1 { font-size: 2em; margin-left: 20px; }
   audio { margin-left: 20px; }
-}
-
-@media (min-width: 361px) and (max-width: 900px){
-
 }
