@@ -1,0 +1,64 @@
+.App {
+  max-width: 1200px;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.App h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 5vw;
+  padding: 20px 0;
+}
+
+.App .inner {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.App .container {
+  width: 50%;
+  display: inline-flex;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 1em;
+}
+
+.inner-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+audio {
+  width: 100%;
+  height: 50px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .App .container {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .App .container {
+    display: flex;
+    width: 100%;
+  }
+}

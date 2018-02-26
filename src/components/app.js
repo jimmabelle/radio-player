@@ -22,24 +22,28 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.channels.map(item => (
-          <Station
-            key={item.id}
-            channelsImg={item.image}
-            channelsTemplate={item.imagetemplate}
-            channelsColor={item.color}
-            channelsTagline={item.tagline}
-            channelsUrl={item.siteurl}
-            channelsLiveAudio={item.liveaudio}
-            channelsLiveAudioId={item.liveaudio.id}
-            channelsLiveAudioUrl={item.liveaudio.url}
-            channelsLiveAudioStatkey={item.liveaudio.statkey}
-            channelsScheduleUrl={item.scheduleurl}
-            channelType={item.type}
-            channelXml={item.xmltvid}
-            channelsId={item.id}
-            channelsName={item.name} />
-        ))}
+        <h1>Sveriges Radio</h1>
+        <div className="inner">
+          {this.state.channels.map(item => (
+            <div className="container" key={item.id} >
+              <Station
+                channelsImg={item.image}
+                channelsTemplate={item.imagetemplate}
+                channelsColor={item.color}
+                channelsTagline={item.tagline}
+                channelsUrl={item.siteurl}
+                channelsLiveAudio={item.liveaudio}
+                channelsLiveAudioId={item.liveaudio.id}
+                channelsLiveAudioUrl={item.liveaudio.url}
+                channelsLiveAudioStatkey={item.liveaudio.statkey}
+                channelsScheduleUrl={item.scheduleurl}
+                channelType={item.type}
+                channelXml={item.xmltvid}
+                channelsId={item.id}
+                channelsName={item.name} />
+            </div>
+          ))}
+        </div>
       </div>
     )
   }
